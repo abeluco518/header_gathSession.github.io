@@ -1,0 +1,50 @@
+.header__nav{
+
+    ul{
+        width: 400px;
+        list-style:none;
+        display: flex;
+        gap:30px;
+        font-size:12px;
+
+        a{
+            text-decoration:none;
+            color:$color-grey;
+            position:relative;
+            &.activate{
+                color:$color-white;
+                &::before{
+                    content:'';
+                    position:absolute;
+                    bottom:-7px;
+                    left:0;
+                    display:block;
+                    width:20px;
+                    height:3px;
+                    background-color:$color-pink;
+
+                }
+            }
+
+            &:hover{
+                color:$color-white;
+                &::before{
+                    content:'';
+                    position:absolute;
+                    bottom:-7px;
+                    left:0;
+                    display:block;
+                    width:20px;
+                    height:3px;
+                    transform: scaleX(0);
+                    background-color:$color-pink;
+                    animation-name:nav-underline;   
+                    transform-origin:left;
+                    animation-duration: 0.5s;
+                    animation-fill-mode:forwards;
+                }
+            }
+        }
+    }
+
+}

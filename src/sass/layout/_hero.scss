@@ -1,0 +1,47 @@
+.hero{
+    width: 41%;
+    margin-top: 75px;
+    &__title{
+        font-family:'Merriweather';
+        font-size:58px;
+        font-weight: 600;
+
+    }
+
+    &__subtitle{
+        color:$color-grey;
+        font-size:17px;
+        font-weight:400;
+        font-family:Poppins;
+        margin-top: 20px;
+
+    }
+
+    &__buttons{
+        display:flex;
+        gap:10px;
+        margin-top:30px;
+        
+        a{
+            text-decoration:none;
+            font-size: 14px;
+            position:relative;
+        }
+
+        a.more{
+            padding: 15px 45px 15px 20px;
+            &:hover{
+                text-decoration:underline;
+            }
+
+            img{
+                width: 30px;
+                position:absolute;
+                right:10px;
+                bottom:7px;
+
+            }
+        }
+
+    }
+}

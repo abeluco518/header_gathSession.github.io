@@ -1,0 +1,10 @@
+.hero__buttons a.button{
+    display:inline-block;
+    padding: 15px 45px 15px 45px;
+    background-color:$color-pink;
+    border-radius: 10px 10px 10px 0px;
+    &:hover{
+        opacity: 0.7;
+    }
+    
+}
